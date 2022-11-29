@@ -1,0 +1,29 @@
+#: import FadeTransition kivy.uix.screenmanager.FadeTransition
+#: import Factory kivy.factory.Factory
+
+WindowManager:
+    ScreenOne:
+
+<ScreenOne>:
+    name:"first"
+    BoxLayout:
+        orientation: 'horizontal'
+        canvas.before:
+            Rectangle:
+                size: self.size
+                pos: self.pos
+                source: "background.png"
+        BoxLayout:
+            cols: 1
+            orientation:"horizontal"
+            padding:0
+            spacing:0
+            Grafico:
+                source:"error.png"
+                allow_stretch: True
+                keep_ratio: True
+                size_hint_y: None
+                size_hint_x: None
+                width: self.parent.width
+                height: self.parent.height      
+                id: graf1      
