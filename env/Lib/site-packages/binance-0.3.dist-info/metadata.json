@@ -1,0 +1,1 @@
+{"extensions": {"python.details": {"contacts": [{"email": "t@takakioshima.com", "name": "Takaki Oshima", "role": "author"}], "document_names": {"description": "DESCRIPTION.rst"}, "project_urls": {"Home": "https://github.com/toshima/binance"}}}, "generator": "bdist_wheel (0.29.0)", "metadata_version": "2.0", "name": "binance", "summary": "Binance API wrapper", "version": "0.3"}

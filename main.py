@@ -21,7 +21,7 @@ class Grafico(Image):
     pass
 
 class MainApp(MDApp):
-    saldo_money=0
+    saldo_money=1000
     saldo_monedas=0
     status=''
     ultimo_precio=1
@@ -31,9 +31,9 @@ class MainApp(MDApp):
     precision=5
 
     def build(self):
-        self.token='BTCBRL'
-        self.api_key=''
-        self.api_secret=''
+        self.token='BTCUSDT'
+        self.api_key='YhOJXxZqbaP7PzuXwdNNxMbXLpyuDrMAFmuonp7qvuWpxYhMPOvZr08gHGlD2F7I'
+        self.api_secret='16qZzduO2JV7L1nGtyO0OidcGl1QJXABWv7vUaBVN9Oiyi5FAp5OpoKGdq1KNJAZ'
         self.client = Client(self.api_key, self.api_secret)
         self.grafico1 = self.root.get_screen('first').ids.graf1
         self.ejecutar(0)
